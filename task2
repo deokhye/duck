@@ -74,7 +74,7 @@
           "base_uri": "https://localhost:8080/",
           "height": 34
         },
-        "outputId": "60c5f330-3df5-4868-f18a-bc89e5c7bd67"
+        "outputId": "26c6da63-f76a-44eb-fd33-2da046f4c246"
       },
       "source": [
         "# 주어진 변수(a, b, c) 직접 수정불가\n",
@@ -85,7 +85,7 @@
         "\n",
         "print(type(a), type(b), type(c) )"
       ],
-      "execution_count": 6,
+      "execution_count": 1,
       "outputs": [
         {
           "output_type": "stream",
@@ -113,7 +113,11 @@
       "metadata": {
         "id": "wI7l2ltaRUKy",
         "colab_type": "code",
-        "colab": {}
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "01a7c443-6ea4-46c1-b0a2-a3f41319e126"
       },
       "source": [
         "# 주어진 변수(num_list) 직접 수정 불가\n",
@@ -125,8 +129,16 @@
         "\n",
         "print(answer)"
       ],
-      "execution_count": 0,
-      "outputs": []
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "45\n"
+          ],
+          "name": "stdout"
+        }
+      ]
     },
     {
       "cell_type": "markdown",
@@ -151,7 +163,7 @@
           "base_uri": "https://localhost:8080/",
           "height": 34
         },
-        "outputId": "791362b4-e512-42a0-f222-4d15f202b236"
+        "outputId": "062b6a55-47be-4859-dc43-710d86e7b821"
       },
       "source": [
         "# 주어진 변수(date)만 직접 수정불가, 다른 year, month, day 변수는 직접 수정가능\n",
@@ -164,7 +176,7 @@
         "\n",
         "print(year, month, day)"
       ],
-      "execution_count": 11,
+      "execution_count": 3,
       "outputs": [
         {
           "output_type": "stream",
@@ -196,7 +208,7 @@
           "base_uri": "https://localhost:8080/",
           "height": 34
         },
-        "outputId": "e44bdbee-ca2f-4c86-dd2d-1e649beb93a9"
+        "outputId": "4b224824-8bd5-45d5-8e3f-27e989031786"
       },
       "source": [
         "# 주어진 변수(summary) 직접 수정불가\n",
@@ -205,7 +217,7 @@
         "  summary += i\n",
         "print(summary)"
       ],
-      "execution_count": 15,
+      "execution_count": 4,
       "outputs": [
         {
           "output_type": "stream",
@@ -237,7 +249,7 @@
           "base_uri": "https://localhost:8080/",
           "height": 34
         },
-        "outputId": "897e7aa9-bfa6-4a73-d344-a531f7afa5eb"
+        "outputId": "88ae2b19-5c92-481a-9403-5eae900ec510"
       },
       "source": [
         "# 주어진 변수(hangul) 직접 수정불가\n",
@@ -246,7 +258,7 @@
         "# 출력\n",
         "print(a)"
       ],
-      "execution_count": 23,
+      "execution_count": 5,
       "outputs": [
         {
           "output_type": "stream",
@@ -296,7 +308,7 @@
         "#출력\n",
         "print(summary/len(e))\n"
       ],
-      "execution_count": 72,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -328,7 +340,7 @@
           "base_uri": "https://localhost:8080/",
           "height": 52
         },
-        "outputId": "d8eba310-d72d-452a-ff68-cabede812b07"
+        "outputId": "574aee16-f111-4785-c190-c29b7a26c2d0"
       },
       "source": [
         "# 주어진 변수(n) 직접 수정불가\n",
@@ -336,18 +348,18 @@
         "\n",
         "\n",
         "if n%2 == 0:\n",
-        "  print('짝수')\n",
+        "  print('짝수입니다')\n",
         "else:\n",
         "  print('짝수가 아닙니다')\n",
         "#출력"
       ],
-      "execution_count": 74,
+      "execution_count": 7,
       "outputs": [
         {
           "output_type": "stream",
           "text": [
-            "숫자를 입력해주세요7\n",
-            "짝수가 아닙니다\n"
+            "숫자를 입력해주세요2\n",
+            "짝수입니다\n"
           ],
           "name": "stdout"
         }
@@ -390,7 +402,7 @@
         "# 출력\n",
         "print(d)"
       ],
-      "execution_count": 82,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -419,9 +431,9 @@
         "colab_type": "code",
         "colab": {
           "base_uri": "https://localhost:8080/",
-          "height": 34
+          "height": 52
         },
-        "outputId": "ffdc2ba2-2be3-4998-8526-96879df644c5"
+        "outputId": "a368c6b8-9450-444c-8dc6-8391c98a4163"
       },
       "source": [
         "# 주어진 변수(num_10) 직접 수정불가\n",
@@ -429,18 +441,41 @@
         "num_10 = int(input('숫자를 입력해주세요'))\n",
         "\n",
         "def prime_number(n):\n",
-        "    pass\n",
+        "  if n <=1:\n",
+        "    return '소수입니다'\n",
+        "  elif n == 2:\n",
+        "    return '소수입니다'\n",
+        "  else:\n",
+        "    for x in range(2, n):\n",
+        "      if (n % x) == 0:\n",
+        "        return '소수가 아닙니다'\n",
+        "      else:\n",
+        "        continue\n",
+        "    return '소수입니다'\n",
+        "\n",
         "\n",
         "prime_number(num_10)"
       ],
-      "execution_count": 83,
+      "execution_count": 16,
       "outputs": [
         {
           "output_type": "stream",
           "text": [
-            "숫자를 입력해주세요10\n"
+            "숫자를 입력해주세요5\n"
           ],
           "name": "stdout"
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'소수입니다'"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 16
         }
       ]
     },
