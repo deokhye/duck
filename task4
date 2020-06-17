@@ -118,7 +118,7 @@
           "base_uri": "https://localhost:8080/",
           "height": 210
         },
-        "outputId": "9eacbd3b-56c3-49d0-e720-85f2294779de"
+        "outputId": "7017c7ed-ade3-44f3-e1ae-0fd74b5c2c00"
       },
       "source": [
         "import tensorflow as tf\n",
@@ -142,7 +142,7 @@
         "  if i%100==99:\n",
         "    print(\"학습 횟수:\",i, \"Error:\", error, \"예측 결과:\", output)"
       ],
-      "execution_count": 4,
+      "execution_count": 5,
       "outputs": [
         {
           "output_type": "stream",
