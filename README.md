@@ -15,3 +15,9 @@ https://github.com/deokhye/duck/blob/master/task2
 
 *학습률 최적화, 군집 분석 구현, Cost Function 구현
 https://github.com/deokhye/duck/blob/master/task3
+
+
+4주차
+
+*딥러닝 용어 정리, 클론 코딩, 딥러닝 순전파 & 역전파 계산
+https://github.com/deokhye/duck/blob/master/task4
